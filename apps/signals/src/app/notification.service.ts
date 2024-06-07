@@ -19,7 +19,7 @@ const NOTIFICATIONS: Notification[] = [
 export class NotificationService {
   private notifications: Notification[] = NOTIFICATIONS;
   private notificationsSubject = new BehaviorSubject<Notification[]>(this.notifications);
-  private idCounter = 0;
+  private idCounter = NOTIFICATIONS.length + 1;
 
   constructor() { }
 

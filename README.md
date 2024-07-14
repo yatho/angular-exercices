@@ -88,6 +88,6 @@ npx nx@latest init
 
 ```bash
 
-npx nx serve
+npx nx serve <project>
 
 ```

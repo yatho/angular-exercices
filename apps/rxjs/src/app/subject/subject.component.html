@@ -1,0 +1,29 @@
+<input type="text" [(ngModel)]="message" />
+<button (click)="sendMessage()" type="submit">Ajout d'un message</button>
+
+<h2>Liste de tous les messages</h2>
+<table>
+  @for (message of messages(); track $index) {
+  <tr>
+    <td>{{ message }}</td>
+  </tr>
+  }
+</table>
+
+<button (click)="reset()">Reset</button>
+
+<div class="card">
+  <h1>Subject</h1>
+  <button (click)="subscribeToSubject()" type="button">S'abonner</button>
+</div>
+
+<div class="card">
+  <h1>ReplaySubject</h1>
+  <button (click)="subscribeToReplaySubject()" type="button">S'abonner</button>
+</div>
+<div class="card">
+  <h1>BehaviorSubject</h1>
+  <button (click)="subscribeToBehaviorSubject()" type="button">
+    S'abonner
+  </button>
+</div>

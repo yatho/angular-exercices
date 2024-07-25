@@ -7,6 +7,7 @@ import { Ex5Component } from './ex5/ex5.component';
 import { SubjectComponent } from './subject/subject.component';
 
 @Component({
+  selector: 'app-root',
   standalone: true,
   imports: [
     Ex1Component,
@@ -26,4 +27,5 @@ import { SubjectComponent } from './subject/subject.component';
     <app-subject />
   `,
 })
-export class AppComponent {}
+export class AppComponent {
+}

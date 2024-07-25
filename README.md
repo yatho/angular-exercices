@@ -74,3 +74,20 @@ It will show tasks that you can run with Nx.
 - [Join the community](https://nx.dev/community)
 - [Subscribe to the Nx Youtube Channel](https://www.youtube.com/@nxdevtools)
 - [Follow us on Twitter](https://twitter.com/nxdevtools)
+
+## Set up local server
+- Init Nx in an existing project
+
+```bash
+
+npx nx@latest init
+
+```
+
+- Run server
+
+```bash
+
+npx nx serve <project>
+
+```

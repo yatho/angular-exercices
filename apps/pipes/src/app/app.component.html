@@ -1,27 +1,27 @@
 <h1>Pipe existant</h1>
 
 <!-- TODO : Afficher le texte en majuscule -->
-<!-- <p>Texte en majuscule: {{ 'angular is awesome' }}</p> -->
+<p>Texte en majuscule: {{ 'angular is awesome' | uppercase }}</p>
 <!-- TODO : Afficher la date au format date dd/MM/yyyy -->
-<!-- <p>Date actuelle: {{ today }}</p> -->
+<p>Date actuelle: {{ today | date : 'dd/MM/yyyy' }}</p>
 <!-- TODO : Afficher le montant au format EUR avec 2 chiffres après la virgule -->
-<!-- <p>Montant: {{ 12345.6789 }}</p> -->
+<p>Montant: {{ 12345.6789 | number : '1.2-2' }}</p>
 <!-- TODO : Afficher le texte tronqué à 10 caractères -->
-<!-- <p>Texte tronqué: {{ 'angular is awesome' }}</p> -->
+<p>Texte tronqué: {{ 'angular is awesome' | slice : 0 : 10 }}</p>
 
 <h1>Vos pipes</h1>
 <!-- TODO : Créer un pipe qui inverse une chaine de caractère exemple : hello -> olleh -->
-<!-- <p>Texte inversé: {{ 'angular is awesome' | reverse }}</p> -->
+<p>Texte inversé: {{ 'angular is awesome' | reverse }}</p>
 <!-- TODO : Créer des tests unitaires sur le pipe reverse -->
 <!-- TODO : Créer un pipe qui tronque une chaîne de caractères à une longueur définie et ajoute "..." si elle est plus longue. -->
-<!-- <p>Texte tronqué: {{ 'angular is awesome' | truncate : 10 }}</p> -->
+<p>Texte tronqué: {{ 'angular is awesome' | truncate : 10 }}</p>
 <!-- TODO : Créer un pipe qui filter une liste d'élément -->
-<!-- <input [(ngModel)]="searchText" />
+<input [(ngModel)]="searchText" />
 <ul>
-  @for (item of items | filter: searchText; track $index) {
+  @for (item of items | filter: searchText; track item) {
   <li>{{ item }}</li>
   }
-</ul> -->
+</ul>
 <!-- TODO Bonus : Décommenter les 2 lignes ci dessous et résoudre le problème existant si vous le trouvez -->
-<!-- <input #frontTechno placeholder="Ajout d'une nouvelle techno" />
-<button (click)="addTechno(frontTechno.value)">Ajouter</button> -->
+<input #frontTechno placeholder="Ajout d'une nouvelle techno" />
+<button (click)="addTechno(frontTechno.value)">Ajouter</button>

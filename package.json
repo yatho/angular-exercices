@@ -2,7 +2,12 @@
   "name": "@exo-angular/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "start-pipes": "nx serve pipes",
+    "start-routing": "nx serve routing",
+    "start-rxjs": "nx serve rxjs",
+    "start-signals": "nx serve signals"
+  },
   "private": true,
   "devDependencies": {
     "@angular-devkit/build-angular": "~18.0.0",

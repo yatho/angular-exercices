@@ -1,4 +1,4 @@
-import { Component, Input, inject } from '@angular/core';
+import { Component, Input, inject, input } from '@angular/core';
 import { NotificationService, Notification } from '../notification.service';
 
 @Component({
@@ -9,14 +9,14 @@ import { NotificationService, Notification } from '../notification.service';
   styleUrl: './notification-item.component.css',
 })
 export class NotificationItemComponent {
-  @Input({required: true}) notification!: Notification;
+  notification = input.required<Notification>();
   private notificationService = inject(NotificationService);
 
   protected markAsRead(): void {
-    this.notificationService.markAsRead(this.notification.id);
+    this.notificationService.markAsRead(this.notification().id);
   }
 
   protected removeNotification(): void {
-    this.notificationService.removeNotification(this.notification.id);
+    this.notificationService.removeNotification(this.notification().id);
   }
 }

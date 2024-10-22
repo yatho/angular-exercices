@@ -11,5 +11,5 @@ import { AsyncPipe } from '@angular/common';
   styleUrl: './notification-list.component.css',
 })
 export class NotificationListComponent {
-  protected notifications$ = inject(NotificationService).getNotifications();
+  protected notifications = inject(NotificationService).getNotifications();
 }
